@@ -1,0 +1,150 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "dea06eba09a1132480b36511a82710e3",
+    "packages": [
+        {
+            "name": "genai/attribute",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../../php-attribute",
+                "reference": "546c4cef96ee3fb4b421b3c2a5437d14264738ab"
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GenAI\\Attribute\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Build-time attribute scanner that dispatches custom attributes to your handlers. PHP 8 only; it emits no runtime code itself — your handlers feed the PHP 5.3-safe *Register dumpers.",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "genai/container",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../../php-container",
+                "reference": "fd041e50ec0843e1298f91416e0b638f88ad518c"
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/container": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GenAI\\Container\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Minimal PSR-11 dependency-injection container, compatible with PHP 5.3.29",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "genai/di",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "..",
+                "reference": "364e1fbe53679bbd24e118ebc99a84bf97b84b02"
+            },
+            "require": {
+                "genai/attribute": "*",
+                "genai/container": "*",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GenAI\\Di\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Popular DI attributes (#[Service], #[Repository], #[Configuration], #[Bean], #[Value]) and their processor, targeting GenAI\\Container. Build-time (PHP 8).",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/master"
+            },
+            "time": "2017-02-14T16:28:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "genai/di-demo",
+    "type": "project",
+    "repositories": [
+        { "type": "path", "url": ".." },
+        { "type": "path", "url": "../../php-attribute" },
+        { "type": "path", "url": "../../php-container" }
+    ],
+    "require": {
+        "genai/di": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Demo\\": "fixtures"
+        }
+    }
+}
