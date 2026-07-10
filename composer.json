@@ -1,6 +1,5 @@
 {
     "name": "genai/di",
-    "version": "1.0.0",
     "description": "Popular DI attributes (#[Service], #[Repository], #[Configuration], #[Bean], #[Value]) and their processor, targeting GenAI\\Container. Build-time (PHP 8).",
     "type": "library",
     "license": "Apache-2.0",
