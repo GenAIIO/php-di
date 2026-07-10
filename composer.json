@@ -3,10 +3,6 @@
     "description": "Popular DI attributes (#[Service], #[Repository], #[Configuration], #[Bean], #[Value]) and their processor, targeting GenAI\\Container. Build-time (PHP 8).",
     "type": "library",
     "license": "Apache-2.0",
-    "repositories": [
-        { "type": "path", "url": "../php-attribute" },
-        { "type": "path", "url": "../php-container" }
-    ],
     "require": {
         "php": ">=8.0",
         "genai/attribute": "*",
